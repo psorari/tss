@@ -1,0 +1,46 @@
+{
+  "trades": {
+    "layer1": {
+      "tables": [
+        {
+          "tableName": "trade",
+          "tableLocation": "C:\\ENI\\Files\\DataFiles\\l1\\trade",
+          "fileType": "csv"
+        }
+/*        {
+          "tableName": "Dept",
+          "tableLocation": "hdfs://quickstart.cloudera:8020//l1/dept/",
+          "fileType": "csv"
+        }*/
+      ]
+    },
+    "layer2": {
+      "tables": [
+        {
+          "tableName": "tradeAvro",
+          "tableLocation": "C:\\ENI\\Files\\DataFiles\\l2\\trade",
+          "fileType": "avro"
+        }
+/*        {
+          "tableName": "DeptAvro",
+          "tableLocation": "hdfs://quickstart.cloudera:8020//l2/dept/",
+          "fileType": "avro"
+        }*/
+      ]
+    },
+    "layer3": {
+      "tables": [
+        {
+          "tableName": "tradeParquet",
+          "tableLocation": "C:\\ENI\\Files\\DataFiles\\l3\\trade",
+          "fileType": "parquet"
+        }
+/*        {
+          "tableName": "DeptParquet",
+          "tableLocation": "hdfs://quickstart.cloudera:8020//l3/dept/",
+          "fileType": "parquet"
+        }*/
+      ]
+    }
+  }
+}

@@ -16,16 +16,19 @@ object tssStart extends AppConfig {
 
 
     //lazy val runpipelineValue = args(0).toString
-    lazy val runpipelineValue = "loadLayer2"
+    //lazy val runpipelineValue = "loadLayer2"
 
     // Loading One time configuration
     //lazy val configPath = getClass.getResource("/tableConfig.json").getPath
     val configPath ="test"
     lazy val configurations: MetaConfiguration = loadTableConfigs(configPath)
 
-    println(configurations)
+    println("Meta configuration Info :"+configurations.trades.layer1 )
+    //println(configurations)
 
-    Ingest.runPipeline(runpipelineValue, configurations)
+    //Ingest.runPipeline(runpipelineValue, configurations)
+
+    Ingest.runPipeline
 
   }
 

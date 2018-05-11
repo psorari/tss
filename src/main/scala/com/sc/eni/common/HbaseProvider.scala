@@ -1,9 +1,9 @@
 package com.sc.eni.common
 
-//import com.cloudera.spark.hbase.HBaseContext
-import org.apache.hadoop.fs.Path
+
+/*import org.apache.hadoop.fs.Path
 import org.apache.hadoop.hbase.HBaseConfiguration
-import org.apache.hadoop.hbase.client.{Admin, ConnectionFactory}
+import org.apache.hadoop.hbase.client.{Admin, ConnectionFactory}*/
 
 trait HbaseProvider extends SparkContextProvider{
   /*val hconf = HBaseConfiguration.create()
